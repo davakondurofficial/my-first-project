@@ -1,3 +1,2 @@
-Cython
-aiohttp==3.8.5
 aiogram==2.25.1
+aiohttp==3.8.3
