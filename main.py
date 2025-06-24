@@ -2,7 +2,6 @@
 import logging
 from aiogram import Bot, Dispatcher, executor, types
 
-# ❗ Временно жёстко вставленный токен
 API_TOKEN = "8148785440:AAFub-M6r6BOPWE_YyqLYYBJiccJsOsSJ_w"
 
 logging.basicConfig(level=logging.INFO)
