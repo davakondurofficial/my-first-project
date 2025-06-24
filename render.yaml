@@ -3,8 +3,11 @@ services:
     name: telegram-bot
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: |
+      pip install --upgrade pip setuptools wheel
+      pip install -r requirements.txt
     startCommand: "python main.py"
     envVars:
       - key: BOT_TOKEN
         value: 8148785440:AAFub-M6r6BOPWE_YyqLYYBJiccJsOsSJ_w
+        sync: false
