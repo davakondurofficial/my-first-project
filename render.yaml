@@ -7,4 +7,4 @@ services:
     startCommand: "python main.py"
     envVars:
       - key: BOT_TOKEN
-        sync: false
+        value: 8148785440:AAFub-M6r6BOPWE_YyqLYYBJiccJsOsSJ_w
