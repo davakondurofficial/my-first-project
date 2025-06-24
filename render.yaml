@@ -4,7 +4,6 @@ services:
     env: python
     plan: free
     buildCommand: |
-      apt-get update && apt-get install -y gcc libffi-dev libssl-dev
       pip install --upgrade pip setuptools wheel
       pip install -r requirements.txt
     startCommand: "python main.py"
