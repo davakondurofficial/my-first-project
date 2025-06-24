@@ -3,7 +3,7 @@ import logging
 from aiogram import Bot, Dispatcher, executor, types
 import os
 
-API_TOKEN = os.getenv("BOT_TOKEN")
+API_TOKEN = 8148785440:AAFub-M6r6BOPWE_YyqLYYBJiccJsOsSJ_w
 
 logging.basicConfig(level=logging.INFO)
 
