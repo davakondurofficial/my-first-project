@@ -1,7 +1,0 @@
-build
-setuptools
-wheel
-python-telegram-bot==20.3
-Flask==2.3.2
-gunicorn==21.2.0
-aiogram==3.4.1
