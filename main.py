@@ -1,4 +1,3 @@
-
 import logging
 from aiogram import Bot, Dispatcher, executor, types
 
@@ -8,7 +7,6 @@ logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
-
 
 @dp.message_handler(commands=["start"])
 async def send_welcome(message: types.Message):
@@ -25,31 +23,25 @@ async def send_welcome(message: types.Message):
         "Здесь не говорят. Здесь делают."
     )
 
-
 @dp.message_handler(commands=["press"])
 async def press(message: types.Message):
     await message.answer("Программа на пресс: 4 круга по 4 упражнения, по 30 сек каждое.")
-
 
 @dp.message_handler(commands=["arms"])
 async def arms(message: types.Message):
     await message.answer("Программа на руки: бицепс + трицепс, 3 подхода по 12 повторений.")
 
-
 @dp.message_handler(commands=["legs"])
 async def legs(message: types.Message):
     await message.answer("Программа на ноги: присед, выпады, жим ногами, 4 подхода.")
 
-
 @dp.message_handler(commands=["dry"])
 async def dry(message: types.Message):
-    await message.answer("Сушка: интервальные кардио-тренировки, 20–30 мин.")
-
+    await message.answer("Сушка: интервальные кардио + дефицит калорий.")
 
 @dp.message_handler(commands=["nutrition"])
 async def nutrition(message: types.Message):
-    await message.answer("Питание: высокобелковое, дефицит калорий, 5 приёмов пищи.")
-
+    await message.answer("Питание: высокобелковое, дробное, 5-6 приёмов пищи в день.")
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
